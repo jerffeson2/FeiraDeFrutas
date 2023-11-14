@@ -1,0 +1,24 @@
+
+Explicação do teste Unitario
+
+O metodo def test_adicionar_fruta(feira) passou no teste porque era espera 
+  feira.adicionar_fruta('Maçã', 10) e o  assert estoque == {'Maçã': 10}
+  foi aceito.
+
+
+
+  O metodo def test_comprar_fruta_com_sucesso(feira): passou no teste
+  pois o feira.adicionar_fruta('Banana', 15)
+    feira.comprar_fruta('Banana', 5) era esperado 
+    o assert estoque == {'Banana': 10} foi aceito.
+
+
+O metodo 
+def test_comprar_fruta_sem_sucesso(feira): passou no teste pois era esperado:
+feira.adicionar_fruta('Pera', 8)
+    feira.comprar_fruta('Pera', 10)
+    O assert estoque == {'Pera': 8} foi aceito.
+
+
+O metodo def test_comprar_fruta_inexistente(feira): não foi aceito pois 
+o feira.adicionar_fruta('Manga', 10) não existe.
